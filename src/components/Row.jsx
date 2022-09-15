@@ -12,6 +12,7 @@ const Row = ({ title, fetchURl, rowID }) => {
       setMovies(response.data.results);
     });
   }, [fetchURl]);
+  // console.log(movies);
 
   const slideLeft = () => {
     var slider = document.getElementById("slider"+ rowID);
