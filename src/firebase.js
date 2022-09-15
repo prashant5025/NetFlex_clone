@@ -1,19 +1,21 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyD8VJzsskmO-XpC27vYeCeOvLQsV3Z1a0E",
-  authDomain: "netflix-react-yt-ead8a.firebaseapp.com",
-  projectId: "netflix-react-yt-ead8a",
-  storageBucket: "netflix-react-yt-ead8a.appspot.com",
-  messagingSenderId: "664459635311",
-  appId: "1:664459635311:web:3d835f431ed562473bfb9a"
+  apiKey: "AIzaSyDEVyga9bVyHxlUGc5934Xa9WwxfL3Wt_g",
+  authDomain: "ditto-27b7d.firebaseapp.com",
+  projectId: "ditto-27b7d",
+  storageBucket: "ditto-27b7d.appspot.com",
+  messagingSenderId: "781089597853",
+  appId: "1:781089597853:web:430cf237f8033ab8cae774"
 };
 
 // Initialize Firebase
-export const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
+export const db = getFirestore(app);

@@ -10,7 +10,7 @@ import Account from "./pages/Account";
 function App() {
   return (
     <>
-      {/* <AuthContextProvider> */}
+      <AuthContextProvider>
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
@@ -20,7 +20,7 @@ function App() {
             path='/account' element={<Account />}
           />
         </Routes>
-      {/* </AuthContextProvider> */}
+      </AuthContextProvider>
     </>
   );
 }
