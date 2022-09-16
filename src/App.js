@@ -22,7 +22,7 @@ function App() {
             element={
               <ProtectedRoute>
                 <Account />
-              </ProtectedRoute>
+              </ProtectedRoute> 
             }
           />
         </Routes>
